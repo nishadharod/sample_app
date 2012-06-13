@@ -24,7 +24,7 @@ class User < ActiveRecord::Base
 
 #  VALID_PASSWORD_REGEX = /^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$/
 
-  validates :password, presence: true, length: { minimum: 8 } #, format: {with: VALID_PASSWORD_REGEX}
+  validates :password, length: { minimum: 8 } #, format: {with: VALID_PASSWORD_REGEX}
   validates :password_confirmation, presence: true
 
 
