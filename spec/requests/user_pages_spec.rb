@@ -53,7 +53,7 @@ describe 'User pages:' do
                 it_should_behave_like "all user pages"
                 it { should_not have_content('error') }
                 it { should have_selector('div.alert.alert-success', text: 'Welcome to Sample App!') }
-
+                it { should have_link('Sign out')}
       end
     end
 
